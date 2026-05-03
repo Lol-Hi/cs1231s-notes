@@ -4,7 +4,7 @@ Two sets $X$ and $Y$ have the same cardinality iff there is a bijection between 
 ## Countable Sets
 A set  is countable iff it is finite or it has the same cardinality as $\mathbb{N}$: $$X \text{ is countable} \iff X \text{ is finite} \vee \exists f: \mathbb{N} \mapsto X \:(f \text{ is bijective})$$**Tutorial 7 Q9:**  $X$ is countably iff it is empty, or there is an onto function from $\mathbb{N}$ to $X$ $$X \text{ is countable} \iff X = \varnothing \vee \exists f: \mathbb{N} \mapsto X \:(f \text{ is onto})$$*Intuition (not mathematical): I can store all of $x_i\in X$ in an array `X = [x1, x2, ...]` (either finite or infinite)*
 #### "How do I make a countable set?" theorems
-* **Theorem 3.5:** Every subset of a countable set is countable: $X \text{ is countable} \wedge Y \subseteq X \implies Y \text{ is countable}$
+* **Theorem 3.5:** Every subset of a countable set is countable: $X \text{ is countable} \implies \forall Y \subseteq X \:(Y \text{ is countable})$
 - **Tutorial 8 Q1:** $X$ and $Y$ are countable $\implies$ $X \cup Y$ are countable
 - **Tutorial 8 Q2**: 
 	- $\forall n\in\mathbb{N}\: (X_1, X_2, \cdots, X_n \text{ are countable} \implies \bigcup^n_{i=1}X_i \text{ is countable})$
@@ -36,5 +36,5 @@ A set is uncountable iff it is not finite and it does not have the same cardinal
 * **Tutorial 8 Q5(i):** $\exists Y \subseteq X \:(Y \text{ is uncountable}) \implies X \text{ is uncountable}$
 * **Tutorial 8 Q5(ii):** $X$ is uncountable and $Y$ is countable $\implies$ $X-Y$ is uncountable
 * **Tutorial 8 Q8:** $A$ is infinite, $B$ is finite and $B \subseteq A$ 
-  $\implies$ Set of all countably $X$ such that $B \subseteq X \subseteq A$ is uncountable
+  $\implies$ Set of all countable $X$ such that $B \subseteq X \subseteq A$ is uncountable
 * **Corollary 3.8:** The set of all subsets of binary strings $\mathcal{P}(\{0,1\}^*)$ is uncountable
